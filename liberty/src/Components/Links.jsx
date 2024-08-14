@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoLogoInstagram } from "react-icons/io5";
 import { SiGithub } from "react-icons/si";
 import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Links = () => {
+ 
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="w-full h-auto px-4 md:px-8 lg:px-[150px]">
       {/* link SocMed */}

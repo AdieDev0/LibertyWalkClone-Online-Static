@@ -6,6 +6,8 @@ import { ImMenu } from "react-icons/im";
 const Nav = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
+  const [openProfile, setOpenProfile] = useState(false);
+
   return (
     <div>
       <div className="relative">
