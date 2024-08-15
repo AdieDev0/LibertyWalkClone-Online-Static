@@ -74,7 +74,7 @@ const Nav = () => {
             <Link to="/install">Installs</Link> {/* Link to Install page */}
           </li>
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
-            Gallery
+          <Link to="/Gallery">Gallery</Link> {/* Link to Install page */}
           </li>
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
             Support

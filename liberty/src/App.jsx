@@ -7,6 +7,8 @@ import Release from "./Components/Release";
 import TheMost from "./Components/TheMost";
 import TheEnd from "./Components/TheEnd";
 import Install from "./Components/Shared/Install"; // Import Install component
+import Gallery from "./Components/Shared/Gallery"; // Import Install component
+
 
 const App = () => {
   return (
@@ -27,6 +29,7 @@ const App = () => {
           }
         />
         <Route path="/install" element={<Install path />} />{" "}
+        <Route path="/Gallery" element={<Gallery path />} />{" "}
         {/* Route for Install page */}
       </Routes>
     </Router>
