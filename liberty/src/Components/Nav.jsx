@@ -12,7 +12,9 @@ const Nav = () => {
       <div className="relative">
         <div className="lg:hidden">
           {/* Logo Above Menu Button */}
-          <img src={logo} alt="Logo" className="w-8 mx-auto mt-4" />
+          <Link to="/"> {/* Link wrapping the logo */}
+            <img src={logo} alt="Logo" className="w-8 mx-auto mt-4 cursor-pointer" />
+          </Link>
           <button
             className="w-full bg-black text-white py-4 mt-2 flex items-center justify-center"
             onClick={() => setMenuOpen(true)}
@@ -26,7 +28,9 @@ const Nav = () => {
         {isMenuOpen && (
           <div className="fixed top-0 left-0 w-screen h-96 bg-white z-50 lg:hidden">
             <div className="lg:hidden">
-              <img src={logo} alt="Logo" className="w-8 mx-auto mt-4" />
+              <Link to="/hero"> {/* Link wrapping the logo */}
+                <img src={logo} alt="Logo" className="w-8 mx-auto mt-4 cursor-pointer" />
+              </Link>
               {/* Close Button */}
               <button
                 className="w-full bg-black text-white py-4 mt-2 flex items-center justify-center"
@@ -47,7 +51,7 @@ const Nav = () => {
                   <Link to="/install">Installs</Link> {/* Link to Install page */}
                 </li>
                 <li className="py-3 px-4 text-lg cursor-pointer hover:bg-black hover:text-white w-full font-Oswald">
-                <Link to="/Gallery">Gallery</Link>
+                  <Link to="/gallery">Gallery</Link>
                 </li>
                 <li className="py-3 px-4 text-lg cursor-pointer hover:bg-black hover:text-white w-full font-Oswald">
                   Support
@@ -61,7 +65,9 @@ const Nav = () => {
       {/* Desktop Menu */}
       <ul className="hidden lg:flex justify-between w-full px-44 border-b-2 border-black">
         <div>
-          <img src={logo} alt="" className="size-9 cursor-pointer mt-1"/>
+          <Link to="/"> {/* Link wrapping the logo */}
+            <img src={logo} alt="Logo" className="size-9 cursor-pointer mt-1" />
+          </Link>
         </div>
         <div className="flex font-Oswald text-lg lg:text-md md:text-lg uppercase overflow-hidden">
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
@@ -70,11 +76,11 @@ const Nav = () => {
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
             About
           </li>
-          <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white ">
+          <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
             <Link to="/install">Installs</Link> {/* Link to Install page */}
           </li>
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
-          <Link to="/Gallery">Gallery</Link> {/* Link to Install page */}
+            <Link to="/gallery">Gallery</Link> {/* Link to Gallery page */}
           </li>
           <li className="cursor-pointer border-l-2 border-black px-7 py-2 hover:bg-black hover:text-white">
             Support

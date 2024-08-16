@@ -71,7 +71,7 @@ const Links = () => {
               What Does It Take?
             </p>
             <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-              WATCH NOW
+             <a href="https://www.youtube.com/watch?v=Xaa1jb5uvEg">WATCH NOW</a>
             </button>
           </div>
         </div>
@@ -104,12 +104,12 @@ const Links = () => {
           <div className="relative text-white p-4 bg-black/70 h-full flex flex-col justify-end">
             <p className="font-Oswald text-xl md:text-2xl">Liberty</p>
             <span className="font-Oswald font-semibold text-xl md:text-2xl">Walk</span>
-            <p className="mb-2 text-xl md:text-2xl">Race Video</p>
+            <p className="mb-2 text-xl md:text-2xl">Drift Race Video</p>
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               What Does It Take?
             </p>
             <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-              WATCH NOW
+              <a href="https://www.youtube.com/watch?v=yv0NcuJzE1g">WATCH NOW</a>
             </button>
           </div>
         </div>
