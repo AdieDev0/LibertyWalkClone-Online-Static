@@ -6,8 +6,8 @@ import { MdEmail } from "react-icons/md";
 
 const Gallery = () => {
   return (
-    <div className="w-full h-auto px-48">
-      <button className="flex text-center mx-auto px-52 py-2 mt-10 border bg-black text-white font-Oswald text-2xl rounded-md">
+    <div className="w-full h-auto px-4 md:px-12 lg:px-48">
+      <button className="flex items-center justify-center mx-auto px-8 md:px-52 py-2 mt-10 border bg-black text-white font-Oswald text-lg md:text-2xl rounded-md">
         <FaInstagram size={35} className="mr-2" />
         follow us on instagram @_adie.00
       </button>
@@ -98,7 +98,7 @@ const Gallery = () => {
             className="w-[550px] object-cover"
           />
         </div> 
-        <button className="flex text-center mx-auto px-52 py-2 mt-10 border bg-black text-white font-Oswald text-2xl rounded-md">
+        <button className="flex items-center justify-center mx-auto px-8 md:px-52 py-2 mt-10 border bg-black text-white font-Oswald text-lg md:text-2xl rounded-md">
         <FaInstagram size={35} className="mr-2" />
         follow us on instagram @_adie.00
       </button>

@@ -5,16 +5,16 @@ import { MdEmail } from "react-icons/md";
 
 const Install = () => {
   return (
-    <div className="h-auto px-48 py-9">
+    <div className="h-auto lg:px-48 px-5 py-9">
       <div>
-        <p className="text-6xl text-center font-Matemasie">
+        <p className="text-3xl lg:text-6xl text-center font-Matemasie">
           ★ Auto Body Shops & Installers ★
         </p>
-        <div className="flex pt-9 ">
+        <div className="flex flex-col lg:flex-row pt-9">
           <img
             src="https://libertywalk.shop/wp-content/uploads/2022/12/ferrari-f40-liberty-walk.jpg"
             alt=""
-            className="w-[350px]"
+            className="lg:w-[350px] w-96 mx-auto lg:mx-0 mb-5 lg:mb-0"
           />
           <div className="flex-col mx-5 ">
             <p className="text-xl font-Oswald font-medium uppercase">
@@ -37,37 +37,37 @@ const Install = () => {
       </div>
       {/* button */}
       <div className="pt-5 font-Oswald text-md text-center">
-        <div className="flex gap-1">
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+        <div className="flex gap-1 flex-col lg:flex-row">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Arizona
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             California
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Florida
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Georgia
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Hawaii
           </button>
         </div>
-        <div className="flex gap-1 mt-1">
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+        <div className="flex gap-1 flex-col lg:flex-row">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Illinois
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Missouri
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             New York / new jersey
           </button>
-          <button className="border bg-black text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-black text-white lg:w-[223px] h-14 rounded-md uppercase">
             Texas
           </button>
-          <button className="border bg-lime-600 text-white w-[223px] h-14 rounded-md uppercase">
+          <button className="border bg-lime-600 text-white lg:w-[223px] h-14 rounded-md uppercase">
             register
           </button>
         </div>
@@ -78,10 +78,10 @@ const Install = () => {
       {/* solo */}
       <div className="h-auto bg-zinc-200 mt-9 font-Oswald">
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             Arizona
           </p>
-          <div className="flex-col px-3 py-8 text-lg">
+          <div className="flex flex-col px-3 py-8 text-lg">
             <p>Elite Automotive Finishes</p>
             <p>1045 W Broadway Rd Suite 8, Mesa, AZ 85210</p>
             <p>(480) 644-0060</p>
@@ -95,10 +95,10 @@ const Install = () => {
         </div>
         {/* Double */}
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             California
           </p>
-          <div className="flex gap-56">
+          <div className="flex flex-col lg;flex-row ">
             <div className="flex-col px-3 py-8 text-lg">
               <p>Auto Explosion Auto Body (ask for Damian)</p>
               <p>13805 Normandie Ave, Gardena, CA 90249</p>
@@ -125,7 +125,7 @@ const Install = () => {
           </div>
         </div>
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             FLORIDA
           </p>
           <div className="flex-col px-3 py-8 text-lg">
@@ -138,7 +138,7 @@ const Install = () => {
           </div>
         </div>
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             GEORGIA
           </p>
           <div className="flex-col px-3 py-8 text-lg">
@@ -149,7 +149,7 @@ const Install = () => {
           </div>
         </div>
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             HAWAII
           </p>
           <div className="flex-col px-3 py-8 text-lg">
@@ -167,11 +167,11 @@ const Install = () => {
 
         {/* Triple */}
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             ILLINOIS
           </p>
-          <div className="flex gap-40">
-            <div className="flex-col px-3 py-8 text-lg">
+          <div className="flex flex-col lg:flex-row gap-2 lg:gap-40">
+            <div className="flex flex-col px-3 py-8 text-lg">
               <p>Prestige Auto Interiors & Convertible Tops</p>
               <p>322 W Ogden Ave, Westmont, IL 60559</p>
               <p>(630) 297-8044</p>
@@ -183,7 +183,7 @@ const Install = () => {
               </p>
             </div>
 
-            <div className="flex-col px-3 py-8 text-lg">
+            <div className="flex flex-col px-3 py-8 text-lg">
               <p>Black Star</p>
               <p>358 Lexington Dr, Buffalo Grove, IL 60089</p>
               <p>(847) 796-6900</p>
@@ -192,7 +192,7 @@ const Install = () => {
               </p>
             </div>
 
-            <div className="flex-col px-3 py-8 text-lg">
+            <div className="flex flex-col px-3 py-8 text-lg">
               <p>Big Boost Performance</p>
               <p>1432 Bolingbrook Dr, Romeoville, IL 60446</p>
               <p>(708) 465-1299</p>
@@ -207,7 +207,7 @@ const Install = () => {
         </div>
 
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             MISSOURI
           </p>
           <div className="flex-col px-3 py-8 text-lg">
@@ -224,10 +224,10 @@ const Install = () => {
         </div>
 
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             NEW YORK / NEW JERSEY
           </p>
-          <div className="flex gap-56">
+          <div className="flex flex-col lg:flex-row lg:gap-56 ">
             <div className="flex-col px-3 py-8 text-lg">
               <p>ABUSHI</p>
               <p>44-03 56th Rd, Queens, NY 11378</p>
@@ -252,7 +252,7 @@ const Install = () => {
         </div>
 
         <div className="p-2">
-          <p className="bg-black text-white w-auto h-22 text-6xl p-4 uppercase font-medium">
+          <p className="bg-black text-white w-full md:w-auto h-22 text-4xl md:text-6xl p-4 uppercase font-medium">
             TEXAS
           </p>
           <div className="flex-col px-3 py-8 text-lg">
@@ -274,7 +274,7 @@ const Install = () => {
         <img
           src="https://libertywalk.shop/wp-content/uploads/2022/12/75x75_lb.png"
           alt=""
-          className="mb-3"
+          className="mb-3 mx-auto"
         />
         <div className="flex flex-col md:flex-row gap-8 md:gap-32 font-Oswald">
           <div className="flex-1 mt-10">
