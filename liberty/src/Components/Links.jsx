@@ -5,7 +5,6 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Links = () => {
- 
   const [open, setOpen] = useState(false);
 
   return (
@@ -13,28 +12,43 @@ const Links = () => {
       {/* link SocMed */}
       <div className="hidden md:flex gap-10 md:gap-28 text-center items-center justify-center">
         <div className="flex text-xl font-semibold font-Oswald gap-2">
-          <IoLogoInstagram size={30} className="hover:scale-110 duration-200" />
+          <a href="https://www.instagram.com/_adie.00/" target="blank">
+            <IoLogoInstagram
+              size={30}
+              className="hover:scale-110 duration-200"
+            />
+          </a>
           <div>
-            <span>@_adie.00</span>
+            <a href="https://www.instagram.com/_adie.00/" j target="_blank">
+              <span>@_adie.00</span>
+            </a>
             <p className="text-sm text-red-500">Official Instagram</p>
           </div>
         </div>
 
         <div className="flex text-xl font-semibold font-Oswald gap-2">
-          <SiGithub size={30} className="hover:scale-110 duration-200" />
+          <a href="https://github.com/AdieDev0" target="blank">
+            <SiGithub size={30} className="hover:scale-110 duration-200" />
+          </a>
           <div>
-            <span>@AdieDev0</span>
+            <a href="https://github.com/AdieDev0" target="_blank">
+              <span>@AdieDev0</span>
+            </a>
             <p className="text-sm text-red-500">Official Github</p>
           </div>
         </div>
 
         <div className="flex text-xl font-semibold font-Oswald gap-2">
-          <FaFacebookSquare
-            size={30}
-            className="hover:scale-110 duration-200"
-          />
+          <a href="https://www.facebook.com/adrey.barrios" target="_blank">
+            <FaFacebookSquare
+              size={30}
+              className="hover:scale-110 duration-200"
+            />{" "}
+          </a>
           <div>
-            <span>Adrey Barrios</span>
+            <a href="https://www.facebook.com/adrey.barrios" target="_blank">
+              <span>Adrey Barrios</span>
+            </a>
             <p className="text-sm text-red-500">Official Facebook</p>
           </div>
         </div>
@@ -46,7 +60,7 @@ const Links = () => {
             <p className="text-sm text-red-500">Official Tiktok</p>
           </div>
         </div>
-      </div>  
+      </div>
       {/* Lines */}
       <hr className="border-b border-black my-4" />
       {/* The Box */}
@@ -65,13 +79,17 @@ const Links = () => {
           />
           <div className="relative text-white p-4 bg-black/70 h-full flex flex-col justify-end">
             <p className="font-Oswald text-xl md:text-2xl">Liberty</p>
-            <span className="font-Oswald font-semibold text-xl md:text-2xl">Walk</span>
+            <span className="font-Oswald font-semibold text-xl md:text-2xl">
+              Walk
+            </span>
             <p className="mb-2 text-xl md:text-2xl">video</p>
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               What Does It Take?
             </p>
             <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-             <a href="https://www.youtube.com/watch?v=Xaa1jb5uvEg">WATCH NOW</a>
+              <a href="https://www.youtube.com/watch?v=Xaa1jb5uvEg">
+                WATCH NOW
+              </a>
             </button>
           </div>
         </div>
@@ -84,7 +102,9 @@ const Links = () => {
           />
           <div className="relative text-white p-4 bg-black/70 h-full flex flex-col justify-end">
             <p className="font-Oswald text-xl md:text-2xl">Liberty</p>
-            <span className="font-Oswald font-semibold text-xl md:text-2xl">Walk</span>
+            <span className="font-Oswald font-semibold text-xl md:text-2xl">
+              Walk
+            </span>
             <p className="mb-2 text-xl md:text-2xl">video</p>
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               Official Shop
@@ -103,13 +123,17 @@ const Links = () => {
           />
           <div className="relative text-white p-4 bg-black/70 h-full flex flex-col justify-end">
             <p className="font-Oswald text-xl md:text-2xl">Liberty</p>
-            <span className="font-Oswald font-semibold text-xl md:text-2xl">Walk</span>
+            <span className="font-Oswald font-semibold text-xl md:text-2xl">
+              Walk
+            </span>
             <p className="mb-2 text-xl md:text-2xl">Drift Race Video</p>
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               What Does It Take?
             </p>
             <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-              <a href="https://www.youtube.com/watch?v=yv0NcuJzE1g">WATCH NOW</a>
+              <a href="https://www.youtube.com/watch?v=yv0NcuJzE1g">
+                WATCH NOW
+              </a>
             </button>
           </div>
         </div>
