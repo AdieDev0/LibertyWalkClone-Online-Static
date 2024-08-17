@@ -84,11 +84,13 @@ const Links = () => {
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               What Does It Take?
             </p>
-            <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-              <a href="https://www.youtube.com/watch?v=Xaa1jb5uvEg">
-                WATCH NOW
-              </a>
-            </button>
+            <a
+              href="https://www.youtube.com/watch?v=Xaa1jb5uvEg"
+              target="blank"
+              className="border-2 text-center border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300"
+            >
+              <button>WATCH NOW</button>
+            </a>
           </div>
         </div>
 
@@ -128,11 +130,13 @@ const Links = () => {
             <p className="text-red-700 mt-2 text-lg md:text-xl font-bold">
               What Does It Take?
             </p>
-            <button className="border-2 border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300">
-              <a href="https://www.youtube.com/watch?v=yv0NcuJzE1g">
-                WATCH NOW
-              </a>
-            </button>
+            <a
+              href="https://www.youtube.com/watch?v=yv0NcuJzE1g"
+              target="blank"
+              className="border-2 text-center border-white text-white bg-black mt-2 text-lg md:text-xl px-2 py-1  hover:border-red-700 hover:text-red-700 duration-300"
+            >
+              <button>WATCH NOW</button>
+            </a>
           </div>
         </div>
       </div>
