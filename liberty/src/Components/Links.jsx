@@ -5,20 +5,18 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
 
 const Links = () => {
-  const [open, setOpen] = useState(false);
-
   return (
     <div className="w-full h-auto px-4 md:px-8 lg:px-[150px]">
       {/* link SocMed */}
-      <div className="hidden md:flex gap-10 md:gap-28 text-center items-center justify-center">
+      <div className="flex gap-10 md:gap-28 text-center items-center justify-center">
         <div className="flex text-xl font-semibold font-Oswald gap-2">
           <a href="https://www.instagram.com/_adie.00/" target="blank">
             <IoLogoInstagram
               size={30}
-              className="hover:scale-110 duration-200"
+              className="hover:scale-110 duration-200 hover:text-orange-700 lg:hover:text-black"
             />
           </a>
-          <div>
+          <div className="hidden lg:block">
             <a href="https://www.instagram.com/_adie.00/" j target="_blank">
               <span>@_adie.00</span>
             </a>
@@ -28,9 +26,9 @@ const Links = () => {
 
         <div className="flex text-xl font-semibold font-Oswald gap-2">
           <a href="https://github.com/AdieDev0" target="blank">
-            <SiGithub size={30} className="hover:scale-110 duration-200" />
+            <SiGithub size={30} className="hover:scale-110 duration-200 " />
           </a>
-          <div>
+          <div className="hidden lg:block">
             <a href="https://github.com/AdieDev0" target="_blank">
               <span>@AdieDev0</span>
             </a>
@@ -42,10 +40,10 @@ const Links = () => {
           <a href="https://www.facebook.com/adrey.barrios" target="_blank">
             <FaFacebookSquare
               size={30}
-              className="hover:scale-110 duration-200"
+              className="hover:scale-110 duration-200 hover:text-blue-600 lg:hover:text-black"
             />{" "}
           </a>
-          <div>
+          <div className="hidden lg:block">
             <a href="https://www.facebook.com/adrey.barrios" target="_blank">
               <span>Adrey Barrios</span>
             </a>
@@ -54,8 +52,8 @@ const Links = () => {
         </div>
 
         <div className="flex text-xl font-semibold font-Oswald gap-2">
-          <AiFillTikTok size={30} className="hover:scale-110 duration-200" />
-          <div>
+          <AiFillTikTok size={35} className="hover:scale-110 duration-200" />
+          <div className="hidden lg:block">
             <span>Secret</span>
             <p className="text-sm text-red-500">Official Tiktok</p>
           </div>
