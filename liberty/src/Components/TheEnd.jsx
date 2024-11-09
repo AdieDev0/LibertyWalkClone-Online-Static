@@ -2,17 +2,26 @@ import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoIosCall } from "react-icons/io";
 import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion"; // Import Framer Motion
 
 const TheEnd = () => {
   return (
     <div className="h-auto mt-32 px-4 sm:px-8 md:px-16 lg:px-52">
-      <img
+      <motion.img
         src="https://libertywalk.shop/wp-content/uploads/2022/12/75x75_lb.png"
         alt=""
         className="mb-3"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       />
       <div className="flex flex-col md:flex-row gap-8 md:gap-32 font-Oswald">
-        <div className="flex-1 mt-10">
+        <motion.div
+          className="flex-1 mt-10"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1 }}
+        >
           <p className="my-3 text-lg text-gray-400 flex gap-2 items-center">
             <IoLocationSharp size={25} />
             www.LibertyWalk.Shop United States / Canada / North America
@@ -46,8 +55,14 @@ const TheEnd = () => {
               className="cursor-pointer w-12 h-12"
             />
           </div>
-        </div>
-        <div className="flex-1">
+        </motion.div>
+
+        <motion.div
+          className="flex-1"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.2 }}
+        >
           <p className="mb-2 text-xl font-semibold">HELPFUL LINKS</p>
           <p className="my-3 text-md cursor-pointer">Installer</p>
           <p className="my-3 text-md cursor-pointer">
@@ -58,8 +73,14 @@ const TheEnd = () => {
             Official Of Authenticity
           </p>
           <p className="my-3 text-md cursor-pointer">Sponsorship</p>
-        </div>
-        <div className="flex-1">
+        </motion.div>
+
+        <motion.div
+          className="flex-1"
+          initial={{ x: -200, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.4 }}
+        >
           <p className="mb-5 text-xl font-semibold">IMPORTANT LINKS</p>
           <p className="my-3 text-md cursor-pointer">Privacy Policy</p>
           <p className="my-3 text-md cursor-pointer">
@@ -70,9 +91,15 @@ const TheEnd = () => {
             Website Terms and Condition of Use
           </p>
           <p className="my-3 text-md cursor-pointer">Appointments Only</p>
-        </div>
+        </motion.div>
       </div>
-      <div className="text-sm font-Oswald mt-8 text-black/60">
+
+      <motion.div
+        className="text-sm font-Oswald mt-8 text-black/60"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.6 }}
+      >
         <p>
           AirREX is a registered trademark of Pin Hsiu Rubber Company Ltd.
           Nissan is a registered trademark of The Nissan Motor Company, Ltd.
@@ -111,7 +138,7 @@ const TheEnd = () => {
           CA Residents:
           WARNING: Cancer and Reproductive Harm - www.P65Warnings.ca.gov
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
