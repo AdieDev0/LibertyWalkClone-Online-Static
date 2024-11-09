@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
+import { motion } from "framer-motion"; // Import motion from framer-motion
 
 const Hero = () => {
   const slides = [
@@ -53,42 +54,85 @@ const Hero = () => {
   return (
     // Picture
     <div className="max-w-full w-full mx-auto relative mb-5">
-      <div
+      <motion.div
         style={{ backgroundImage: `url(${slides[currentIndex].URL})` }}
         className="relative w-full h-[350px] sm:h-[590px] bg-center bg-cover bg-no-repeat duration-500"
-      ></div>
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      ></motion.div>
       {/* React marquee */}
       <Marquee className="bg-black font-semibold text-md lg:text-3xl md:text-2xl">
-        <div className="text-white font-Oswald p-2 rounded-lg uppercase">
+        <motion.div
+          className="text-white font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           lamborghini countach
-        </div>
-        <div className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase ">
+        </motion.div>
+        <motion.div
+          className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           GR SUPRA
-        </div>
-        <div className="text-white font-Oswald p-2 rounded-lg uppercase">
+        </motion.div>
+        <motion.div
+          className="text-white font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           Porsche 997
-        </div>
-        <div className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase">
-        NISSAN SILVIA S15
-        </div>
-        <div className="text-white font-Oswald p-2 rounded-lg uppercase">
+        </motion.div>
+        <motion.div
+          className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          NISSAN SILVIA S15
+        </motion.div>
+        <motion.div
+          className="text-white font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           SKYLINE R34
-        </div>
-        <div className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase">
+        </motion.div>
+        <motion.div
+          className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
           SRT HELLCAT
-        </div>
-        <div className="text-white font-Oswald p-2 rounded-lg uppercase">
-        Ferrari F40
-        </div>
-        <div className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase">
-        MAZDA RX-7
-        </div>
-        <div className="text-white font-Oswald p-2 rounded-lg uppercase">
-        Lamborghini-HURACAN
-        </div>
-        <div className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase">
-        mclaren-650
-        </div>
+        </motion.div>
+        <motion.div
+          className="text-white font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Ferrari F40
+        </motion.div>
+        <motion.div
+          className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          MAZDA RX-7
+        </motion.div>
+        <motion.div
+          className="text-white font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          Lamborghini-HURACAN
+        </motion.div>
+        <motion.div
+          className="text-yellow-500 font-Oswald p-2 rounded-lg uppercase"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          mclaren-650
+        </motion.div>
       </Marquee>
     </div>
   );

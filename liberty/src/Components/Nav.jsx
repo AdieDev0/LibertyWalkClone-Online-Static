@@ -111,7 +111,7 @@ const Nav = () => {
                   <MenuButton className="uppercase">support</MenuButton>
                   <MenuItems
                     as="ul"
-                    className="absolute w-52 border-2 border-black bg-white text-lg font-medium font-Oswald text-black transition duration-200 ease-out focus:outline-none origin-top-right"
+                    className="absolute w-52 border-2 border-black bg-white text-lg font-medium font-Oswald text-black transition du ease-out focus:outline-none origin-top-right"
                   >
                     <MenuItem as="li">
                       <button className="group flex w-full p-3 items-center gap-2 border-b border-black hover:bg-black hover:text-white uppercase">

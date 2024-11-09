@@ -30,7 +30,7 @@ const App = () => {
         />
         <Route path="/install" element={<Install path />} />{" "}
         <Route path="/Gallery" element={<Gallery path />} />{" "}
-        <Route path="/Her" element={< path />} />{" "}
+        <Route path="/" element={< path />} />{" "}
         {/* Route for Install page */}
       </Routes>
     </Router>
