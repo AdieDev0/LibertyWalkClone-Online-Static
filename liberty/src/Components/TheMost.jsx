@@ -2,6 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { IoSearchOutline } from "react-icons/io5";
 import { PiShoppingCartSimpleLight } from "react-icons/pi";
+import { motion } from "framer-motion";
 
 const TheMost = () => {
   return (
