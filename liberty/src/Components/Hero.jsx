@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Marquee from "react-fast-marquee";
-import { motion } from "framer-motion"; // Import motion from framer-motion
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const slides = [
