@@ -62,6 +62,34 @@ const products = [
   },
 ];
 
+const ProductCard = ({ product }) => (
+  <div className="flex-shrink-0 w-56 sm:w-60 lg:w-72 h-[370px] sm:h-[385px] lg:h-[420px] bg-white p-5 relative shadow-md border rounded-lg">
+    <img
+      src={product.img}
+      alt={product.title}
+      className="w-full h-[180px] object-contain hover:scale-110 duration-300"
+    />
+    <div className="pt-4">
+      <div className="font-Oswald">
+        <p className="text-gray-700 font-semibold text-sm sm:text-md lg:text-lg">
+          {product.brand}
+        </p>
+        <p className="text-lg sm:text-xl lg:text-2xl">{product.title}</p>
+      </div>
+      <div className="flex font-Oswald pt-3">
+        <div className="text-lg sm:text-xl lg:text-2xl">
+          {product.price.map((p, i) => (
+            <p key={i}>{p}</p>
+          ))}
+        </div>
+        <div className="absolute bottom-8 right-5 text-gray-500 cursor-pointer">
+          {product.icon}
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
 const Release = () => {
   return (
     <div className="w-full mt-7">
@@ -72,41 +100,27 @@ const Release = () => {
       </div>
       <hr className="border-b border-black my-4" />
 
-      {/* moving cards */}
-      <Marquee pauseOnHover gradient={false}>
-        <div className="flex gap-4 px-4">
+      {/* Mobile/Tablet Scroll */}
+      <div className="block lg:hidden overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory px-4">
+        <div className="flex gap-4">
           {products.map((product, idx) => (
-            <div
-              key={idx}
-              className="w-56 sm:w-60 lg:w-72 h-[370px] sm:h-[385px] lg:h-[420px] bg-white p-5 relative shadow-md border rounded-lg"
-            >
-              <img
-                src={product.img}
-                alt={product.title}
-                className="w-full h-[180px] object-contain hover:scale-110 duration-300"
-              />
-              <div className="pt-4">
-                <div className="font-Oswald">
-                  <p className="text-gray-700 font-semibold text-sm sm:text-md lg:text-lg">
-                    {product.brand}
-                  </p>
-                  <p className="text-lg sm:text-xl lg:text-2xl">{product.title}</p>
-                </div>
-                <div className="flex font-Oswald pt-3">
-                  <div className="text-lg sm:text-xl lg:text-2xl">
-                    {product.price.map((p, i) => (
-                      <p key={i}>{p}</p>
-                    ))}
-                  </div>
-                  <div className="absolute bottom-8 right-5 text-gray-500 cursor-pointer">
-                    {product.icon}
-                  </div>
-                </div>
-              </div>
+            <div key={idx} className="snap-start">
+              <ProductCard product={product} />
             </div>
           ))}
         </div>
-      </Marquee>
+      </div>
+
+      {/* Desktop Marquee */}
+      <div className="hidden lg:block">
+        <Marquee pauseOnHover gradient={false}>
+          <div className="flex gap-4 px-4">
+            {products.map((product, idx) => (
+              <ProductCard key={idx} product={product} />
+            ))}
+          </div>
+        </Marquee>
+      </div>
     </div>
   );
 };
